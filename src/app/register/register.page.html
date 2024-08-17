@@ -1,0 +1,70 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+<!-- 
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Register</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-item>
+    <ion-label position="floating">Name</ion-label>
+    <ion-input [(ngModel)]="name" type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Email</ion-label>
+    <ion-input [(ngModel)]="email" type="email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Password</ion-label>
+    <ion-input [(ngModel)]="password" type="password"></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" (click)="register()">Register</ion-button>
+</ion-content>
+
+</ion-content> -->
+
+<ion-content fullscreen>
+  <ion-grid class="ion-justify-content-center ion-align-items-center" style="height: 100vh;">
+    <ion-row>
+      <ion-col size="12" size-md="6" size-lg="4">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Register</ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            <ion-item>
+              <ion-label position="floating">Name</ion-label>
+              <ion-input [(ngModel)]="name" type="text"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="floating">Email</ion-label>
+              <ion-input [(ngModel)]="email" type="email"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="floating">Password</ion-label>
+              <ion-input [(ngModel)]="password" type="password"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>Profile Image</ion-label>
+              <ion-button (click)="captureImage()">Capture Image</ion-button>
+            </ion-item>
+
+            <ion-img *ngIf="profileImage" [src]="profileImage" class="profile-img"></ion-img>
+
+            <ion-button expand="full" (click)="register()">Register</ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

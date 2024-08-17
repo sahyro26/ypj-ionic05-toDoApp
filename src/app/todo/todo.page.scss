@@ -1,0 +1,22 @@
+.completed {
+  text-decoration: line-through;
+}
+
+.profile-thumbnail {
+  width: 40px;
+  /* Set the desired width */
+  height: 40px;
+  /* Set the desired height */
+  border-radius: 50%;
+  /* Make it circular */
+  object-fit: cover;
+  /* Ensure the image covers the entire area */
+  margin-right: 8px;
+  /* Add some space between the image and the text */
+}
+
+ion-label h2 {
+  margin: 0;
+  font-size: 1.2em;
+  /* Adjust the font size if needed */
+}
